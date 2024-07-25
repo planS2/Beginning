@@ -6,6 +6,8 @@ DeepFakeDetection简介
 zty
 UniversalFakeDetect  
 [[Paper]](https://arxiv.org/abs/2302.10174)  
-[[Code]](https://github.com/WisconsinAIVision/UniversalFakeDetect)
+[[Code]](https://github.com/WisconsinAIVision/UniversalFakeDetect)  
+简要介绍：
+  
 
 ---
