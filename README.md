@@ -10,5 +10,10 @@
 ![image](https://github.com/JNUAI23/Beginning/assets/105352836/58ba4412-1826-45db-adde-007089bad649)  
 看论文的文献管理工具  zotero 这个有很多大家也可以试试其他的
 
+## 配置Linux环境下的深度学习环境
+目前为止，在windows上借助微软的wsl2，来装Ubuntu跑dl是最简单和方便的  
+[B站up系列教程](https://www.bilibili.com/video/BV1o8411C7wm/)  
+[up的个人网址上blog](https://www.gongsunqi.xyz/posts/3c995b2a/)  
+
 
 
