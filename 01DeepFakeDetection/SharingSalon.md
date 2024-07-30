@@ -10,7 +10,7 @@ UniversalFakeDetect
 简要介绍：
 代码复现环境要求：~~能否跑通~~
 
-zyc
+zyc。。。。。。。。
 Rethinking the Up-Sampling Operations in CNN-based Generative Network for Generalizable Deepfake Detection
 [[Paper]](https://arxiv.org/pdf/2312.10461)  
 [[Code]](https://github.com/chuangchuangtan/NPR-DeepfakeDetection)
