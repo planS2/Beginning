@@ -11,11 +11,15 @@ UniversalFakeDetect
 代码复现环境要求：~~能否跑通~~
 
 zyc   
-Rethinking the Up-Sampling Operations in CNN-based Generative Network for Generalizable Deepfake Detection   
+1.Rethinking the Up-Sampling Operations in CNN-based Generative Network for Generalizable Deepfake Detection   
 [[Paper]](https://arxiv.org/pdf/2312.10461)     
 [[Code]](https://github.com/chuangchuangtan/NPR-DeepfakeDetection)   
 简要介绍：提出邻近像素关系(NPR)，用以捕捉和表征源自上采样操作的通用结构伪影。从局部图像像素的角度探索上采样层的痕迹，提出了一种简单但有效的伪影表示，称为邻域像素关系（Neighboring Pixel Relationships，NPR），以实现广义的深度伪造检测。
-  
+
+2.Learning on Gradients: Generalized Artifacts Representation for GAN-Generated Images Detection
+[[Paper]](https://openaccess.thecvf.com/content/CVPR2023/papers/Tan_Learning_on_Gradients_Generalized_Artifacts_Representation_for_GAN-Generated_Images_Detection_CVPR_2023_paper.pdf)
+[[Code]](https://github.com/chuangchuangtan/LGrad?tab=readme-ov-file)
+简要介绍：实用与训练好的cnn框架，将图像转化为梯度，由数据依赖问题转化为模型依赖问题，最后在进行分类ai生成图像。因为预训练的cnn已经在大量数据集上训练过，因此提高了泛化能力。
 
 ---
 
