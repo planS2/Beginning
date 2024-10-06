@@ -1,6 +1,6 @@
 # ViT
-[[Paper]](https://arxiv.org/abs/2102.03334)  
-[[Code]](https://github.com/dandelin/vilt)  
+[[Paper]](https://arxiv.org/abs/2010.11929)  
+[[Code]](https://github.com/google-research/vision_transformer)  
 
 格式example  
 ##  your name
