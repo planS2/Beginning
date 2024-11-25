@@ -1,0 +1,36 @@
+# ViT小结
+
+[[Paper]](https://arxiv.org/abs/2010.11929)  
+[[Code]](https://github.com/google-research/vision_transformer)  
+
+
+##  郭子豪
+
+### ViT即Vision Transformer，是将经典Transformer应用到CV方向。
+
+先来了解什么是Transformer，其核心部分就是自注意力机制（Self-Attention），多头注意力机制（Multi-Head Attention)和位置编码（Positional Encoding）
+而vit就是transformer应用到图像领域
+ViT优势与传统的CNN不同，CNN需要不断的卷积才能由获取全局信息，而ViT将图像进行分割，把分割后的小块通过处理后当做Transformer中中的输入序列，经过处理无需卷积就能获取全局信息
+
+![image](https://github.com/user-attachments/assets/0cdab325-1f72-4a2b-a578-dddb1dab0fd3)
+![image](https://github.com/user-attachments/assets/e472ea69-160a-4bdd-b36f-d77897c68c93)
+![image](https://github.com/user-attachments/assets/8b635a7d-d67d-483b-b107-3a382919fc57)
+
+### 一，输入与embedding
+
+     1，输入x(16,3,224,224)(batch size 16,RGB,W,H)，对图像进行分割，分割成16*16的小块（patch），即（224/16）**2=196个patch
+     
+     2，把每一个patch展平，（3，16，16）变成一维向量768，进行embedding一共196个patch得到（196，768）的矩阵，而batch size = 16，一次处理16张图像，即输入的x(16,196,768)，在此基础上拼接上cls_token(16,1,768),它用于聚合分类，得到embedding的输出(16,197,768)
+     
+     3，然后加上位置嵌入（ position embedding ）完成embedding操作得到输出x（16，197，768）
+
+### 二、self_attention
+
+     计算QKV，三者均为（ 16，197，768 ），通过多头注意力机制切分成12个头，每个头的维度是64（768/12）每个头变成了x（16，197，64），然后每个头分别计算QK内积、softmax归一化得到注意力权重，权重再与V相乘得到加权结果，12个头合并以后返回x（16，197，768）
+
+### 三、残差连接， layer normalization， MLP
+
+残差链接，z=x+Attention(x)， Layer Normalization， z′=LayerNorm(z)，MLP MLP(z′)=W2​⋅GELU(W1​⋅z′+b1​)+b2​
+
+![image](https://github.com/user-attachments/assets/1b99975e-988c-4aa3-9242-3488e91ebbed)
+![image](https://github.com/user-attachments/assets/7fd9b161-24a3-40d3-8312-e1758ca57983)
