@@ -57,7 +57,7 @@ GAN是什么
 
 # 价值函数
 
-![image-20241118194313541](C:\Users\86176\AppData\Roaming\Typora\typora-user-images\image-20241118194313541.png)
+![image](https://github.com/user-attachments/assets/d7b62014-05c7-44e3-9a37-5dba20b3c6c9)
 
 data : 真 实 数 据
 D :判 别 器 ， 输 出 值 为 [ 0 , 1 ] ， 代 表 输 入 来 自 真 实 数 据 的 概 率
@@ -66,7 +66,7 @@ G :生 成 器 ， 输 出 为 合 成 数 据
 
 
 
-![image-20241118200841928](C:\Users\86176\AppData\Roaming\Typora\typora-user-images\image-20241118200841928.png)
+![image](https://github.com/user-attachments/assets/80036ac8-b767-4bc9-bb20-441e2eb7d7bc)
 
 
 
@@ -84,7 +84,7 @@ l o g ( D ( G ( z ) ) ) 的 梯 度 值 较 大
 
 # 训练流程
 
-![image-20241118194947701](C:\Users\86176\AppData\Roaming\Typora\typora-user-images\image-20241118194947701.png)
+![image](https://github.com/user-attachments/assets/988e827a-b65a-4fe3-bcb1-2f5acb3a87a7)
 
 
 
@@ -159,24 +159,4 @@ p ( x s | x ~ s ) 进 行 建 模 ， 其 中 S 是 x 下 标 的 子 集
 
 
 
-![模型](C:\Users\86176\AppData\Roaming\Typora\typora-user-images\模型-1731928536262-1.png)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-马鞍面
-
-![image-20241118192049485](C:\Users\86176\AppData\Roaming\Typora\typora-user-images\image-20241118192049485.png)
+![image](https://github.com/user-attachments/assets/67a9d0cb-9b13-436d-9a14-6dd66146d732)
